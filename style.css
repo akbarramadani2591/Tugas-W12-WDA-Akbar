@@ -8,7 +8,6 @@
   --aksen: #e8a33d;
 }
 
-/* ===== Gaya Umum ===== */
 * {
   box-sizing: border-box;
 }
@@ -22,7 +21,6 @@ body {
   line-height: 1.6;
 }
 
-/* ===== Header ===== */
 header {
   background: linear-gradient(135deg, var(--biru-tua), var(--biru));
   color: var(--putih);
@@ -46,7 +44,6 @@ header h1 {
   color: #dbe7f7;
 }
 
-/* ===== Navigasi ===== */
 nav {
   background-color: var(--aksen);
   text-align: center;
@@ -68,7 +65,6 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* ===== Konten Utama ===== */
 main {
   max-width: 1000px;
   margin: 30px auto;
@@ -90,7 +86,6 @@ h2 {
   margin-top: 0;
 }
 
-/* ===== Hero ===== */
 .hero {
   text-align: center;
   background: linear-gradient(to right, #fff7e6, #ffffff) !important;
@@ -112,7 +107,6 @@ h2 {
   transform: scale(1.05);
 }
 
-/* ===== Grid Buku ===== */
 .grid-buku {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -164,7 +158,6 @@ h2 {
 .sampul-oranye { background-color: #fde2c4; }
 .sampul-ungu   { background-color: #e5d9f2; }
 
-/* ===== Kategori dan Promo (2 kolom) ===== */
 .dua-kolom {
   display: flex;
   gap: 25px;
@@ -190,7 +183,6 @@ ul {
   border-radius: 6px;
 }
 
-/* ===== Tabel ===== */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -211,7 +203,6 @@ tr:hover td {
   background-color: #fdeccb;
 }
 
-/* ===== Form ===== */
 form {
   display: flex;
   flex-direction: column;
@@ -253,7 +244,6 @@ button:hover {
   background-color: var(--biru-tua);
 }
 
-/* ===== Alamat ===== */
 address {
   font-style: normal;
   margin-top: 20px;
@@ -262,7 +252,6 @@ address {
   padding: 10px 15px;
 }
 
-/* ===== Footer ===== */
 footer {
   text-align: center;
   background-color: var(--biru-tua);
@@ -271,7 +260,6 @@ footer {
   font-size: 14px;
 }
 
-/* ===== Responsif (Tablet & HP) ===== */
 @media (max-width: 800px) {
   .grid-buku {
     grid-template-columns: repeat(2, 1fr);
