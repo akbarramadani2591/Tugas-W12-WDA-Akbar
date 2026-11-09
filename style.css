@@ -1,0 +1,290 @@
+/* ===== Variabel Warna ===== */
+:root {
+  --biru-tua: #1e3a5f;
+  --biru: #2f6db5;
+  --krem: #f5f1e8;
+  --putih: #ffffff;
+  --teks: #2b2b2b;
+  --aksen: #e8a33d;
+}
+
+/* ===== Gaya Umum ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--krem);
+  color: var(--teks);
+  line-height: 1.6;
+}
+
+/* ===== Header ===== */
+header {
+  background: linear-gradient(135deg, var(--biru-tua), var(--biru));
+  color: var(--putih);
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.logo {
+  font-size: 48px;
+}
+
+header h1 {
+  margin: 5px 0;
+  font-size: 36px;
+  letter-spacing: 1px;
+}
+
+.tagline {
+  margin: 0;
+  font-style: italic;
+  color: #dbe7f7;
+}
+
+/* ===== Navigasi ===== */
+nav {
+  background-color: var(--aksen);
+  text-align: center;
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav a {
+  color: var(--biru-tua);
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 14px;
+}
+
+nav a:hover {
+  color: var(--putih);
+  text-decoration: underline;
+}
+
+/* ===== Konten Utama ===== */
+main {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+main > section {
+  background-color: var(--putih);
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: var(--biru-tua);
+  border-bottom: 3px solid var(--aksen);
+  padding-bottom: 6px;
+  margin-top: 0;
+}
+
+/* ===== Hero ===== */
+.hero {
+  text-align: center;
+  background: linear-gradient(to right, #fff7e6, #ffffff) !important;
+}
+
+.tombol {
+  display: inline-block;
+  background-color: var(--biru);
+  color: var(--putih);
+  padding: 10px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.tombol:hover {
+  background-color: var(--biru-tua);
+  transform: scale(1.05);
+}
+
+/* ===== Grid Buku ===== */
+.grid-buku {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.kartu {
+  background-color: var(--krem);
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.kartu:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+.kartu h3 {
+  font-size: 16px;
+  margin: 10px 0 4px;
+  color: var(--biru-tua);
+}
+
+.penulis {
+  font-size: 13px;
+  color: #666;
+  margin: 0;
+}
+
+.harga {
+  font-weight: bold;
+  color: #c0392b;
+  margin: 8px 0 0;
+}
+
+.sampul {
+  height: 120px;
+  border-radius: 8px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sampul-biru   { background-color: #cfe3fa; }
+.sampul-hijau  { background-color: #d4efdc; }
+.sampul-oranye { background-color: #fde2c4; }
+.sampul-ungu   { background-color: #e5d9f2; }
+
+/* ===== Kategori dan Promo (2 kolom) ===== */
+.dua-kolom {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.dua-kolom > div {
+  flex: 1;
+  min-width: 220px;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.promo {
+  flex: 1;
+  min-width: 220px;
+  background-color: #fff7e6;
+  border-left: 5px solid var(--aksen);
+  padding: 15px;
+  border-radius: 6px;
+}
+
+/* ===== Tabel ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #e0d5bd;
+}
+
+th {
+  background-color: var(--biru);
+  color: var(--putih);
+}
+
+tr:hover td {
+  background-color: #fdeccb;
+}
+
+/* ===== Form ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-width: 500px;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 6px;
+}
+
+input, textarea {
+  padding: 9px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--biru);
+  box-shadow: 0 0 5px rgba(47, 109, 181, 0.5);
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: var(--biru);
+  color: var(--putih);
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--biru-tua);
+}
+
+/* ===== Alamat ===== */
+address {
+  font-style: normal;
+  margin-top: 20px;
+  background-color: var(--krem);
+  border-left: 4px solid var(--biru);
+  padding: 10px 15px;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  background-color: var(--biru-tua);
+  color: #dbe7f7;
+  padding: 18px 0;
+  font-size: 14px;
+}
+
+/* ===== Responsif (Tablet & HP) ===== */
+@media (max-width: 800px) {
+  .grid-buku {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-buku {
+    grid-template-columns: 1fr;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 4px 8px;
+  }
+}
